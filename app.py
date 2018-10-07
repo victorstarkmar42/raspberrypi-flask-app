@@ -14,4 +14,4 @@ def hello_name(name):
 if __name__ == '__main__':
     app.run()
     seg = 1
-    subprocess.call("shutdown -s -f")
+    subprocess.call("shutdown -s 1")
